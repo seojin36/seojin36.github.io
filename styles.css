@@ -1,3 +1,6 @@
 button {
-  background-color: limegreen
+  background-color: limegreen;
+  height: 30px;
+  width: auto;
+  padding: 0px 2px
 }
