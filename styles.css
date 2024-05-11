@@ -1,6 +1,19 @@
+body {
+  background-color: #e5ffe5;
+}
+
 button {
+  border-radius: 4px;
   background-color: limegreen;
   height: 30px;
   width: auto;
-  padding: 0px 2px
+  padding: 0px 2px;
 }
+
+.layout {
+  background-color: #f5fff5;
+  border-width: 5px;
+  border-color: DarkGrey;
+  border-radius: 4px
+}
+  
