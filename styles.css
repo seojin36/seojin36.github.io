@@ -1,9 +1,3 @@
-<!DOCKTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="styles.css">
-<title>Seojin's homepage</title>
-<style>
 body {
   background-color: #e5ffe5;
   text-align: center;
@@ -26,25 +20,3 @@ div.layout {
   float: left;
   margin: 5px
 }
-</style>
-</head>
-<body>
-<div style="margin: auto; width: 850px">
-<div class="layout" style="width: 200px; height: 200px">
-NAVBAR
-</div>
-<div class="layout" style="width: 400px; height: 200px">
-HEADER
-</div>
-<div class="layout" style="width: 400px; height: 800px">
-MAIN
-</div>
-<div class="layout" style="width: 200px; height: 800px">
-INFORMATION
-</div>
-<div class="layout" style="width: 610px; height: 100px">
-FOOTER
-</div>
-</div>
-</body>
-</html>
