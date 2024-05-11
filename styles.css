@@ -1,5 +1,12 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>Seojin's homepage</title>
+<style>
 body {
   background-color: #e5ffe5;
+  text-align: center;
 }
 
 button {
@@ -10,10 +17,34 @@ button {
   padding: 0px 2px;
 }
 
-.layout {
+div.layout {
   background-color: #f5fff5;
-  border-width: 5px;
+  border-style: solid;
+  border-width: 3px;
   border-color: DarkGrey;
-  border-radius: 4px
+  border-radius: 4px;
+  float: left;
+  margin: 5px
 }
-  
+</style>
+</head>
+<body>
+<div style="margin: auto; width: 850px">
+<div class="layout" style="width: 200px; height: 200px">
+NAVBAR
+</div>
+<div class="layout" style="width: 400px; height: 200px">
+HEADER
+</div>
+<div class="layout" style="width: 400px; height: 800px">
+MAIN
+</div>
+<div class="layout" style="width: 200px; height: 800px">
+INFORMATION
+</div>
+<div class="layout" style="width: 610px; height: 100px">
+FOOTER
+</div>
+</div>
+</body>
+</html>
