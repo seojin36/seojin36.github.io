@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html>
+<head>
+    <title>Seojin's homepage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Short Stack">
+    <link rel="icon" type="image/x-icon" href="j.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="madlib.js"></script>
+</head> 
+<body>
+    <h1>Madlib: Spring</h1>
+    <p>A play with words</p>
+    <img src="madlib.png" class="full" width="30%">
+    <p>Fill in the blanks and click 'Generate Madlib' to see the result. Pro tip: use the funnyest words possible</p>
+    <div class="bord" style="width:40%; margin:auto; text-align:left;">
+        Person(e.g. John):
+        <input class="q" id="q1" type="text" value="John"><br><br>
+        Adjective(e.g. nice):
+        <input class="q" id="q2" type="text" value="nice"><br><br>
+        Number(e.g. 23):
+        <input class="q" id="q3" type="text" value="23"><br><br>
+        Adverb(e.g. carefully):
+        <input class="q" id="q4" type="text" value="carefully"><br><br>
+        Place(e.g. The park):
+        <input class="q" id="q5" type="text" value="The park"><br><br>
+        Verb(e.g. drink):
+        <input class="q" id="q6" type="text" value="drink"><br><br>
+        Noun(Plural)(e.g. baloons):
+        <input class="q" id="q7" type="text" value="baloons"><br><br>
+        AnimaL(e.g. dog):
+        <input class="q" id="q8" type="text" value="dog"><br><br>
+        Emotion(e.g. happy):
+        <input class="q" id="q9" type="text" value="happy"><br><br>
+        Noun(Plural)(e.g. chairs):
+        <input class="q" id="q10" type="text" value="chairs"><br><br><br>
+        <button id="genmad" onclick="setMadlib()">Generate Madlib</button>
+        <p id="madlib"></p>
+    </div>
+</body>
+ </html>
