@@ -5,7 +5,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Short Stack">
     <link rel="icon" type="image/x-icon" href="j.png">
     <link rel="stylesheet" href="styles.css">
-    <script src="madlib.js"></script>
+    <script>
+     function get(id) {
+    return document.getElementById(id).value
+}
+
+function setMadlib() {
+    let m = "Whenever I go shopping, I always feel " + get('q9') + ". For example, last night I had to buy a birthday present for " + get('q1') + " so I went to The " + get('q7') + " Emporium. There must have been " + get('q3') + " other people also trying to buy " + get('q2') + " " + get('q10') + ". We were packed in so tight, I wasn't even able to " + get('q6') + " like I usually do. I " + get('q4') + " left the Emporium and picked up a " + get('q8') + " from " + get('q5') + " instead. Maybe next year I'll find something better.";
+    document.getElementById("madlib").innerHTML = m;
+}
+    </script>
 </head> 
 <body>
     <h1>Madlib: Spring</h1>
