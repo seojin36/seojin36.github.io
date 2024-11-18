@@ -7,11 +7,15 @@
     <link rel="icon" type="image/x-icon" href="j.png">
     <link rel="stylesheet" href="styles.css">
     <script>
-        function add() {
+    function get(id) {
+        const elem = document.getElementById(id);
+        return elem.value
+    }  
+    function add() {
     let newdiv = document.createElement('p');
-    let name = number.value + '번 ' + nameinp.value + " 세금: ";
-    let tax = 55 + parseInt(estate.value) + parseInt(salary.value)/5;
-    let text = name + ' | 세금' + tax + '경 | 월급: ' + parseInt(salary.value) + '경 | 차액: ' + (parseInt(salary.value) * 1.5 - num) + '경';
+    let name = get("number") + '번 ' + get("nameinp") + " 세금: ";
+    let tax = 55 + parseInt(get("estate") + parseInt(get(salary))/5;
+    let text = name + ' | 세금' + tax + '경 | 월급: ' + parseInt(get("salary") + '경 | 차액: ' + (parseInt(get("salary") * 1.5 - num) + '경';
     const node = document.createTextNode(text);
     newdiv.appendChild(node);
     const element = document.getElementById("list");
@@ -22,7 +26,7 @@
     </head>
     <body>
         <div>
-        <h6 style="border-style; solid;">HAN세금 계산기 3.0</h6>
+        <h6 style="border-style: solid;">HAN세금 계산기 3.0</h6>
         <p>HAN국의 세금을 계산하세요!</p>
         <p>번호:  <input type="number" id="number" min="1" max="26" size="20"></p>
         <p>이름:  <input type="text" id="nameinp" size="20"></p>
