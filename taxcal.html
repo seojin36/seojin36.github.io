@@ -10,16 +10,20 @@
     function get(id) {
         const elem = document.getElementById(id);
         return elem.value ? elem.value : 0;
-    } 
+    }
+    
     function getint(id) {
         return parseInt(get(id))
     }
+        
     function add() {
     let newdiv = document.createElement('p');
     let name = get("number") + '번 ' + get("nameinp") + " 세금: ";
     let tax = 55 + getint("estate") + getint("salary") / (10 + ((getint("twejic") / 500) * getint("salary"));
     let sal = getint("salary") + ((getint("twejic") / 100) * getint("salary"))
+
     let text = name + ' | 세금 ' + tax + '경 | 월급: ' + getint("salary") + '경 | 차액: ' + sal - tax) + '경';
+    
     const node = document.createTextNode(text);
     newdiv.appendChild(node);
     const element = document.getElementById("list");
